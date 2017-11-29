@@ -74,7 +74,7 @@ var processCourseInfo = function(body) {
         url = API_BASE + '/video/' + obj.statsId + '/source?r=720&f=webm',
         destination = directory + '/' + seq + ' - ' + obj.slug + '.webm',
         title = obj.slug;
-      const direct = getDirectLink(url);
+      	const direct = getDirectLink(url);
       return {
         url: url,
         destination: destination,
